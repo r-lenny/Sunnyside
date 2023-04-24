@@ -32,6 +32,10 @@ nav {
     align-items: center;
 }
 
+section {
+    height: 100vh;
+}
+
 nav img {
     height: 5vh;
     filter: invert();
@@ -63,16 +67,19 @@ header h1 {
 }
 
 .container {
-    height: 100vh;
+    height: 75vh;
     display: flex;
 }
 
 .smallBox {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     flex: 5;
-    width: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 75%;
 }
 
 .smallBox h1 {
@@ -93,6 +100,21 @@ header h1 {
     display: flex;
     flex: 5;
     height: 100%;
-    /* width: 50vw; */
     background-size: cover;
+    background-position: center center;
+}
+
+.endCenter {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.endCenter div {
+    width: 50%;
+    margin: 3rem;
+}
+
+.endCenter, h2, p {
+    text-align: center;
 }
