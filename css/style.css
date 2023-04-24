@@ -16,6 +16,11 @@ header {
     position: relative;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 nav {
     padding: 0 2rem;
     width: 100%;
@@ -46,8 +51,7 @@ ul li a {
 }
 
 ul li a:hover {
-    background-color: white;
-    color: black;
+    background-color: #6ECEFF;
     transition: all .5s;
 }
 
@@ -56,4 +60,38 @@ header h1 {
     color: white;
     font-size: clamp(2rem, 5vw, 10rem);
     padding-top: 10%;
+}
+
+.container {
+    height: 75vh;
+    display: flex;
+}
+
+.smallBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10rem 8rem;
+    flex: 5;
+}
+
+.smallBox h1 {
+    font-size: 3rem;
+}
+
+.smallBox p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.smallBox a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.smallBoxImg {
+    display: flex;
+    flex: 5;
+    background-image: url(asset/desktop/image-transform.jpg);
+    background-size: cover;
 }
