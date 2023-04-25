@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+.green {
+    color: #21524A;
+}
+
+.blue {
+    color: #00496B;
+}
+
+.grey {
+    color: #9D9D9E;
+}
+
 body {
     background-color: white;
     font-family: sans-serif;
@@ -33,7 +45,7 @@ nav {
 }
 
 section {
-    height: 100vh;
+    height: 80vh;
 }
 
 nav img {
@@ -45,6 +57,11 @@ ul {
     display: flex;
     list-style-type: none;
     gap: clamp(2rem, 5vw, 10rem);
+}
+
+em {
+    font-weight: 200;
+    font-size: .8rem;
 }
 
 ul li a {
@@ -64,6 +81,13 @@ header h1 {
     color: white;
     font-size: clamp(2rem, 5vw, 10rem);
     padding-top: 10%;
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 4px;
+}
+
+section h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2rem;
 }
 
 .container {
@@ -89,6 +113,7 @@ header h1 {
 .smallBox p {
     font-size: 1.2rem;
     line-height: 2rem;
+    text-align: left;
 }
 
 .smallBox a {
@@ -118,3 +143,77 @@ header h1 {
 .endCenter, h2, p {
     text-align: center;
 }
+
+section h1 {
+    margin-top: 10%;
+    text-align: center;
+}
+
+section .container {
+    justify-content: space-around;
+}
+
+.smallBoxComments img {
+    height: 50px;
+    width: 50px;
+
+    border-radius: 50%;
+}
+
+.smallBoxComments {
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 20%;
+    height: 60%;
+}
+
+.slider {
+    display: flex;
+}
+
+.sliderImg {
+    height: 50vh;
+    width: 200%;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+
+
+/* -------test------- */
+
+/* définir la position initiale et l'opacité pour les lettres */
+span {
+    font-family: 'Abril Fatface', cursive;
+    position: relative;
+    display: inline-block;
+    bottom: -20px; /* ajuster cette valeur pour correspondre à la taille de votre texte */
+    opacity: 0;
+    animation-name: anim;
+    animation-duration: 0.5s;
+    animation-delay: calc(var(--index) * 0.05s); /* délai de démarrage pour chaque lettre */
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.2, 0.85, 0.32, 1.2); /* définir la fonction de temporisation pour l'animation */
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin: 3px -2px;
+  }
+  
+  /* définition de l'animation pour chaque lettre */
+  @keyframes anim {
+    to {
+      bottom: 0;
+      opacity: 1;
+      transform: translate(0, -50%);
+    }
+  }
+  
+  footer {
+    height: 50vh;
+    background-color: #90D4C4;
+  }
+  
